@@ -1,0 +1,515 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffffff; 
+}
+
+/* Header Estilos */
+header {
+    display: flex;
+    flex: row;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Polaroid LOGO */
+header img {
+    padding-left: 20px;
+    padding-top: 5px;
+    height: 15vh;
+    padding-left: 35px;
+}
+
+/* links del header */
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    font-family: 'Martel sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    color: rgb(36, 36, 36);
+    margin: 0 22px; 
+}
+
+/* Iconos header */
+
+.iconos-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+
+}
+
+#ico-login {
+    height: 35px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#ico-fav {
+    height: 35px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#ico-shop {
+    height: 35px;
+    padding: 10px;
+    margin: 5px;
+}
+/* ------------------------------------------------- */
+
+/* Homepage - PADRE */
+.flex-layout {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    width: 90%;
+    max-width: 100%;
+    /* background-color: aqua; */
+}
+
+/*---------------------------------------- */
+
+.barradeco {
+    display: flex;
+    flex-direction: row;
+    height: 10px;
+    /* background-color: blue; */
+    margin-bottom: 20px;
+    justify-content: left;
+}
+
+.barradeco1 {
+    height: 10px;
+    width: 310px;
+    background-color: red;
+}
+
+.barradeco2 {
+    height: 10px;
+    width: 310px;
+    background-color: rgb(255, 162, 0);
+}
+
+.barradeco3 {
+    height: 10px;
+    width: 310px;
+    background-color: rgb(105, 211, 0);
+}
+
+.barradeco4 {
+    height: 10px;
+    width: 310px;
+    background-color: rgb(0, 112, 211);
+}
+
+/* Hero */
+
+.Hero-section {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+    margin: 0 auto;
+    /* background-color: rgb(255, 102, 135); */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    margin-left: 2rem;
+    height: 275px;
+    width: 275px;
+    max-width: none;
+    /* background-color: rgb(255, 255, 255); */
+    position: absolute;
+}
+
+.hero-title p{
+    font-size: 75px;
+    font-weight: 800;
+    font-family: "martel sans";
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgb(57, 57, 57);
+}
+
+.hero-img {
+    padding: 40px;
+    height: 100%;
+    width: 100%;
+    background-image: url(./Assets/Banner/Banner-bg-3.jpg);
+    background-size: cover;
+}
+
+
+/* Filter - Gral */
+.filter {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Filter Tune */
+
+.filter-boxes {
+    display: flex;
+    width: 210px;
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    /* background-color: rgb(51, 51, 107); */
+    font-family: 'fira sans', sans-serif;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.filter-boxes img {
+    height: 150%;
+    width: 75%;
+}
+
+.filter-boxes p {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "martel sans";
+    padding: 20px;
+}
+
+
+/* BOXES-SHOP */
+
+.boxes-shop {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* background-color: coral; */
+    max-width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    height: 480px;
+}
+
+.caja-shop {
+    margin: 10px;
+    width: 300px;
+    height: 450px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 10px;
+}
+
+.box-shop-imagen {
+    width: 300px;
+    height: 380px;
+    background-color: yellow;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* boxes categories */
+
+.box-categoria-gral {
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.boxes-span {
+    display: flex;
+    justify-content: left;
+    margin-left: 55px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: none;
+}
+
+.boxes-span span {
+    display: flex;
+    font-family: "fira sans";
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 2rem;
+}
+
+.boxes-categorias {
+    height: 330px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: none;
+    justify-content: space-around;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.box-categorias-1 {
+    display: flex;
+    flex-direction: column;
+    height: 275px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 16px 7px 25px -3px rgba(0,0,0,0.3);
+}
+
+.box-categoria-imagen {
+    height: 250px;
+    width: 300px;
+    background-color: yellow;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 15px;
+}
+
+.box-categoria-imagen img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.box-categorias-1 span {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "fira sans";
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------ Servicios ----------*/
+
+.services {
+    display: flex;
+    background-color: yellowgreen;
+    width: 300px;
+    height: 800px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 55px;
+}
+
+.box-services-1 {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+}
+
+.box-services-2 {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+}
+
+.box-services-3 {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+}
+
+/* Contacto */
+
+.box-contacto-gral {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 90%;
+    background-color: yellow;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+.boxes-contacto {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    background-color: lightgrey;
+    align-content: center;
+    justify-items:auto;
+}
+
+/* Contacto P */
+
+.boxes-contacto p {
+    font-size: 25px;
+    font-family: "martel sans";
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Contacto - name */
+.box-name {
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    margin-left: 2rem;
+}
+
+.box-name label {
+    font-family: "martel sans";
+    font-size: 15px;
+}
+
+.box-name input {
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    text-align: left;
+    align-content: center;
+}
+
+/* Contacto email*/
+
+.box-email {
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    margin-left: 2rem;
+}
+
+.box-email label {
+    font-family: "martel sans";
+    font-size: 15px;
+}
+
+.box-email input {
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    text-align: left;
+    align-content: center;
+}
+
+/* Contacto telefono */
+
+.box-phone {
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    margin-left: 2rem;
+}
+
+.box-phone label {
+    font-family: "martel sans";
+    font-size: 15px;
+}
+
+.box-phone input {
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    text-align: left;
+    align-content: center;
+}
+
+/* Contacto telefono */
+
+.box-mensaje {
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    margin-left: 2rem;
+}
+
+.box-mensaje label {
+    font-family: "martel sans";
+    font-size: 15px;
+}
+
+.box-mensaje input {
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+    text-align: left;
+    
+}
+
+.box-button button {
+    height: 20px;
+    width: 100px;
+}
+
+/* Footer */
+
+.logo-boxes {
+    display: flex;
+    background-color: rgb(148, 148, 148);
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.box-logo-1 {
+    height: 80px;
+    width: 200px;
+    background-color: deeppink;
+}
+
+.box-logo-2 {
+    height: 80px;
+    width: 200px;
+    background-color: rgb(122, 28, 78);
+}
+
+.box-logo-3 {
+    height: 80px;
+    width: 200px;
+    background-color: rgb(122, 28, 78);
+}
+
+.box-logo-4 {
+    height: 80px;
+    width: 200px;
+    background-color: rgb(122, 28, 78);
+}

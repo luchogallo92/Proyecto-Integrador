@@ -103,18 +103,6 @@
   transform-origin: bottom left;
 }
 
-/*----- Filter Boxes ----*/
-
-.filter-boxes img:hover {
-  cursor: pointer;
-  transition: transform ease 200ms;
-  transform: translate(0, -5px);
-}
-
-.filter-boxes p:hover {
-  position: static;
-  cursor: pointer;
-}
 
  /* ------------- Cajas de shop ----------------*/
 
@@ -122,11 +110,4 @@
   transition: transform ease 200ms;
   transform: translate(0, -5px);
   cursor: pointer;
-}
-
-/* -------- Cajas de Categorias ------------*/
-
-.box-categorias-1:hover {
-  transition: transform ease 200ms;
-  transform: translate(0, -5px);
 }

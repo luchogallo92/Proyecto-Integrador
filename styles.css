@@ -1,3 +1,8 @@
+:root {
+    color: Raisinblack #242325;
+    color: Scaret #F42C04;
+}
+
 /* GENERAL */
 *{
     margin: 0;
@@ -7,7 +12,7 @@
 }
 
 body {
-    background-color: #ffffff; 
+    background-color: F5F5F5; 
 }
 
 /* Header Estilos */
@@ -38,7 +43,7 @@ header img {
     font-size: 15px;
     text-align: center;
     align-items: center;
-    color: rgb(36, 36, 36);
+    color: #3C3C3C;
     margin: 0 22px; 
 }
 
@@ -77,59 +82,21 @@ header img {
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
-    width: 90%;
-    max-width: 100%;
     /* background-color: aqua; */
 }
 
-/*---------------------------------------- */
-
-.barradeco {
-    display: flex;
-    flex-direction: row;
-    height: 10px;
-    /* background-color: blue; */
-    margin-bottom: 20px;
-    justify-content: left;
-}
-
-.barradeco1 {
-    height: 10px;
-    width: 310px;
-    background-color: red;
-}
-
-.barradeco2 {
-    height: 10px;
-    width: 310px;
-    background-color: rgb(255, 162, 0);
-}
-
-.barradeco3 {
-    height: 10px;
-    width: 310px;
-    background-color: rgb(105, 211, 0);
-}
-
-.barradeco4 {
-    height: 10px;
-    width: 310px;
-    background-color: rgb(0, 112, 211);
-}
 
 /* Hero */
 
 .Hero-section {
     display: flex;
-    height: 300px;
+    height: 25rem;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     max-width: none;
     margin: 0 auto;
     /* background-color: rgb(255, 102, 135); */
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .hero-title {
@@ -142,32 +109,33 @@ header img {
 }
 
 .hero-title p{
-    font-size: 75px;
+    font-size: 5rem;
     font-weight: 800;
     font-family: "martel sans";
-    width: 100%;
-    height: 100%;
     color: #ffffff;
     text-shadow: 1px 1px 2px rgb(57, 57, 57);
 }
 
 .hero-img {
-    padding: 40px;
-    height: 100%;
+    z-index: -1;
+    height: 25rem;
     width: 100%;
     background-image: url(./Assets/Banner/Banner-bg-3.jpg);
     background-size: cover;
+    background-position-y: 15%;
 }
 
 
 /* Filter - Gral */
+
 .filter {
     /* background-color: blue; */
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100px;
-    width: 100%;
+    height: 9rem;
+    width: 65rem;
     margin: 0 auto;
 }
 
@@ -175,28 +143,23 @@ header img {
 
 .filter-boxes {
     display: flex;
-    width: 210px;
-    height: 50px;
-    border: 2px solid rgb(0, 0, 0);
-    /* background-color: rgb(51, 51, 107); */
-    font-family: 'fira sans', sans-serif;
-    text-align: center;
+    flex-direction: column;
+    height: 6rem;
+    width: 8rem;
     align-items: center;
     border-radius: 5px;
-    justify-content: space-between;
-    margin-top: 20px;
+    cursor: pointer;
 }
 
 .filter-boxes img {
-    height: 150%;
-    width: 75%;
+    height: 6rem;
+    width: 4rem;
 }
 
 .filter-boxes p {
     font-size: 15px;
-    font-weight: 400;
-    font-family: "martel sans";
-    padding: 20px;
+    font-weight: 500;
+    font-family: "fira sans";
 }
 
 
@@ -228,152 +191,98 @@ header img {
     border-radius: 10px 10px 0px 0px;
 }
 
-/* boxes categories */
+/* Box Reviews Titles */
 
-.box-categoria-gral {
-    background-color: lightgrey;
-    border-radius: 10px;
-}
-
-.boxes-span {
+.box-reviews-title {
     display: flex;
-    justify-content: left;
-    margin-left: 55px;
-    margin-top: 15px;
-    width: 100%;
-    max-width: none;
-}
-
-.boxes-span span {
-    display: flex;
-    font-family: "fira sans";
-    font-weight: 600;
-    font-size: 30px;
-    margin-left: 2rem;
-}
-
-.boxes-categorias {
-    height: 330px;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
+    height: 4rem;
+    width: 100%;
+    background-color: #242325;
+}
+
+.box-reviews-title h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Martel sans";
+    color: #F5F5F5;
+}
+
+/*  BOX REVIEWS GRAL */
+
+.box-reviews {
+    /* background-color: rgb(255, 157, 157); */
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
-    width: 90%;
-    max-width: none;
     justify-content: space-around;
-    overflow: hidden;
-    align-items: center;
-    margin-bottom: 20px;
-    cursor: pointer;
 }
 
-.box-categorias-1 {
+/* Boxes de Reviews */
+
+.review_1 {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    height: 275px;
-    width: 300px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    align-items: center;
-    box-shadow: 16px 7px 25px -3px rgba(0,0,0,0.3);
+    justify-content: space-around;
+    width: 20rem;
+    height: 16rem;
+    margin-left: 1rem;
 }
 
-.box-categoria-imagen {
-    height: 250px;
-    width: 300px;
-    background-color: yellow;
-    border-radius: 10px 10px 0px 0px;
-    margin-bottom: 15px;
+.review_1 img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-size: cover;
 }
 
-.box-categoria-imagen img {
-    border-radius: 10px 10px 0px 0px;
-    width: 100%;
-    height: 100%;
-}
-
-.box-categorias-1 span {
+.review_1 h3 {
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 20px;
+    font-weight: 800;
+    font-family: "martel sans";
+}
+
+.review_1 p {
     font-family: "fira sans";
-    font-weight: 500;
-    color: white;
-    font-size: 20px;
-}
-
-/*------------ Servicios ----------*/
-
-.services {
-    display: flex;
-    background-color: yellowgreen;
-    width: 300px;
-    height: 800px;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 55px;
-}
-
-.box-services-1 {
-    display: flex;
-    height: 250px;
-    width: 250px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(236, 236, 236);
-    border-radius: 10px;
-}
-
-.box-services-2 {
-    display: flex;
-    height: 250px;
-    width: 250px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(236, 236, 236);
-    border-radius: 10px;
-}
-
-.box-services-3 {
-    display: flex;
-    height: 250px;
-    width: 250px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(236, 236, 236);
-    border-radius: 10px;
+    text-align: center;
 }
 
 /* Contacto */
 
 .box-contacto-gral {
     display: flex;
-    flex-direction: column;
-    height: 600px;
-    width: 90%;
-    background-color: yellow;
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-color: #5296A5;
     margin: auto;
     margin-top: 10px;
-    justify-content: flex-start;
+    justify-content: space-between;
+    color: #F5F5F5;
 }
 
 .boxes-contacto {
+    margin-left: 2rem;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 20rem;
     width: 300px;
-    background-color: lightgrey;
     align-content: center;
-    justify-items:auto;
 }
 
 /* Contacto P */
 
 .boxes-contacto p {
     font-size: 25px;
-    font-family: "martel sans";
-    font-weight: 800;
+    font-family: "fira sans";
+    font-weight: 500;
     text-align: center;
 }
 
@@ -385,6 +294,7 @@ header img {
     height: 40px;
     width: 200px;
     margin-left: 2rem;
+    color: #F5F5F5;
 }
 
 .box-name label {
@@ -409,6 +319,7 @@ header img {
     height: 40px;
     width: 200px;
     margin-left: 2rem;
+    color: #F5F5F5;
 }
 
 .box-email label {
@@ -433,6 +344,7 @@ header img {
     height: 40px;
     width: 200px;
     margin-left: 2rem;
+    color: #F5F5F5;
 }
 
 .box-phone label {
@@ -448,7 +360,7 @@ header img {
     align-content: center;
 }
 
-/* Contacto telefono */
+/* Contacto Mensaje*/
 
 .box-mensaje {
     padding: 10px;
@@ -462,20 +374,55 @@ header img {
 .box-mensaje label {
     font-family: "martel sans";
     font-size: 15px;
+    color: #F5F5F5;
 }
 
 .box-mensaje input {
     border-radius: 5px;
-    height: 200px;
+    height: 60px;
     width: 100%;
     text-align: left;
-    
 }
 
-.box-button button {
-    height: 20px;
-    width: 100px;
+
+/* Google maps */
+
+.mapouter {
+    display: flex;
+    align-items: center;
 }
+
+.gmap_canvas iframe {
+    border-radius: 20px;
+}
+
+.review_place {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    text-align: left;
+    justify-content: center;
+    border-radius: 5%;
+    padding: 1rem;
+
+}
+
+.review_place h1 {
+    font-family: "martel sans";
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.review_place p {
+    font-weight: 400;
+    font-family: "fira sans";
+    text-align: center;
+    color: #F5F5F5;
+}
+
 
 /* Footer */
 

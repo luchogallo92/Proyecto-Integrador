@@ -108,6 +108,6 @@
 
  .caja-shop:hover {
   transition: transform ease 200ms;
-  transform: translate(0, -5px);
+ box-shadow: 1px 1px 12px  #4A4A48;
   cursor: pointer;
 }

@@ -1,9 +1,11 @@
 :root {
     color: Raisinblack #242325;
     color: Scaret #F42C04;
+    color: Dimgraay #726E75;
+    color: baackground #F5F5F5;
 }
 
-/* GENERAL */
+/* GENERAL PPTES */
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +14,9 @@
 }
 
 body {
-    background-color: F5F5F5; 
+    width: 1360px;
+    margin: 0 auto;
+    background-color: #F5F5F5; 
 }
 
 /* Header Estilos */
@@ -20,6 +24,7 @@ header {
     display: flex;
     flex: row;
     height: 80px;
+    min-width: 75%;
     justify-content: space-between;
     align-items: center;
 }
@@ -76,26 +81,17 @@ header img {
 }
 /* ------------------------------------------------- */
 
-/* Homepage - PADRE */
-.flex-layout {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    /* background-color: aqua; */
-}
-
-
 /* Hero */
 
 .Hero-section {
     display: flex;
-    height: 25rem;
+    height: 32rem;
     width: 100%;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     max-width: none;
     margin: 0 auto;
+    min-width: 75%;
     /* background-color: rgb(255, 102, 135); */
 }
 
@@ -109,6 +105,7 @@ header img {
 }
 
 .hero-title p{
+    min-width: 75%;
     font-size: 5rem;
     font-weight: 800;
     font-family: "martel sans";
@@ -118,11 +115,15 @@ header img {
 
 .hero-img {
     z-index: -1;
-    height: 25rem;
+    height: 30rem;
+    min-height: 22rem;
     width: 100%;
+    min-width: 75%;
     background-image: url(./Assets/Banner/Banner-bg-3.jpg);
     background-size: cover;
-    background-position-y: 15%;
+    background-position-y: 10%;
+    position: static;
+    border-radius: 10px;
 }
 
 
@@ -134,8 +135,9 @@ header img {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 9rem;
+    height: 6rem;
     width: 65rem;
+    min-width: 75%;
     margin: 0 auto;
 }
 
@@ -162,34 +164,98 @@ header img {
     font-family: "fira sans";
 }
 
+/* Products Titles */
+
+.box-products-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 4rem;
+    width: 100%;
+    min-width: 75%;
+    background-color: #242325;
+    color: #F5F5F5;
+    border-radius: 10px 10px 0px 0px; 
+    margin-top: 2rem;
+    font-family: "martel sans";
+}
+
 
 /* BOXES-SHOP */
 
 .boxes-shop {
+    margin-top: 1rem;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    /* background-color: coral; */
+    background-color: #F1F2EB;
     max-width: 100%;
+    min-width: 75%;
     justify-content: center;
     overflow: hidden;
-    height: 480px;
+    height: 500px;
+    justify-content: space-evenly;
 }
 
 .caja-shop {
     margin: 10px;
     width: 300px;
-    height: 450px;
-    background-color: rgb(225, 225, 225);
-    border-radius: 10px;
+    height: 480px;
+    border-radius: 20px;
+    background-color: #242325;
 }
 
 .box-shop-imagen {
     width: 300px;
-    height: 380px;
-    background-color: yellow;
+    height: 350px;
+}
+
+.box-shop-imagen img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     border-radius: 10px 10px 0px 0px;
 }
+
+.caja-title {
+    margin-top: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.caja-title h2 {
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Martel sans";
+    text-align: center;
+
+}
+
+.caja-title p {
+    font-size: 12px;
+    font-family: "fira sans";
+    text-align: center;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+}
+
+.add-to-cart button {
+    cursor: pointer;
+    border: 1px solid #242325;
+    margin-top: 0.5rem;
+    font-size: 15px;
+    font-weight: 600;
+    height: 3rem;
+    width: 70%;
+    border-radius: 10px;
+}
+
+
 
 /* Box Reviews Titles */
 
@@ -200,7 +266,9 @@ header img {
     margin: 0 auto;
     height: 4rem;
     width: 100%;
+    min-width: 75%;
     background-color: #242325;
+    border-radius: 0px 0px 10px 10px; 
 }
 
 .box-reviews-title h1 {
@@ -214,6 +282,8 @@ header img {
 /*  BOX REVIEWS GRAL */
 
 .box-reviews {
+    width: 100%;
+    min-width: 75%;
     /* background-color: rgb(255, 157, 157); */
     border-radius: 10px;
     display: flex;
@@ -261,11 +331,13 @@ header img {
     align-items: center;
     height: 400px;
     width: 100%;
+    min-width: 75%;
     background-color: #5296A5;
     margin: auto;
     margin-top: 10px;
     justify-content: space-between;
     color: #F5F5F5;
+    border-radius: 20px;
 }
 
 .boxes-contacto {
@@ -421,23 +493,26 @@ header img {
     font-family: "fira sans";
     text-align: center;
     color: #F5F5F5;
+    position: static;
 }
 
 
 /* Footer */
 
-.logo-boxes {
+.box-footer {
     display: flex;
-    background-color: rgb(148, 148, 148);
+    align-items: center;
+    background-color: #242325;
     height: 200px;
     width: 100%;
     justify-content: center;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.box-logo-1 {
+.box-footer-text-1 {
     height: 80px;
     width: 200px;
     background-color: deeppink;
@@ -449,14 +524,38 @@ header img {
     background-color: rgb(122, 28, 78);
 }
 
-.box-logo-3 {
+.box-social-media {
+    text-align: center;
     height: 80px;
-    width: 200px;
-    background-color: rgb(122, 28, 78);
+    width: 20rem;
 }
 
-.box-logo-4 {
-    height: 80px;
-    width: 200px;
-    background-color: rgb(122, 28, 78);
+.box-social-media img {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.box-social-media h3 {
+    font-family: "fira sans";
+    color: #F5F5F5;
+    font-weight: 400;
+}
+
+/* Title Creator */
+
+.title-creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    background-color: #726E75;
+}
+
+.title-creator h3 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Martel sans";
+    color: #F5F5F5;
 }

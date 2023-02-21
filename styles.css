@@ -255,8 +255,6 @@ header img {
     border-radius: 10px;
 }
 
-
-
 /* Box Reviews Titles */
 
 .box-reviews-title {
@@ -344,9 +342,19 @@ header img {
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
-    height: 20rem;
-    width: 300px;
-    align-content: center;
+    align-items: center;
+    height: 24rem;
+}
+
+.button-send-info {
+    margin-top: 4rem;
+}
+
+.button-send-info button {
+    font-weight: 500;
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
 }
 
 /* Contacto P */
@@ -513,16 +521,28 @@ header img {
 }
 
 .box-footer-text-1 {
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    text-align: left;
+    height: 8rem;
     width: 200px;
-    background-color: deeppink;
+    padding: 3rem;
 }
 
-.box-logo-2 {
-    height: 80px;
-    width: 200px;
-    background-color: rgb(122, 28, 78);
+.box-footer-text-1 span {
+    font-weight: 800;
+    font-family: "martel sans";
+    color: #F1F2EB;
 }
+
+.box-footer-text-1 a {
+    font-family: "fira sans";
+    color: #F1F2EB;
+}
+
+/* Social media boxes */
 
 .box-social-media {
     text-align: center;

@@ -103,6 +103,27 @@
   transform-origin: bottom left;
 }
 
+/* Hero title Shop now */
+
+.type-effect h1 {
+  width: 9ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 
  /* ------------- Cajas de shop ----------------*/
 
